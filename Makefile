@@ -38,6 +38,10 @@ install_sam:
 
 install: virtualenv  install_sam
 
+run:
+	source $(VENV)/bin/activate \
+	&& python3 cluster_sam/dataset_segmentation.py
+
 clean:
 	rm -rf $(SAM_PATH)
 
